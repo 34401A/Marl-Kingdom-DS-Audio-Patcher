@@ -1,0 +1,442 @@
+{
+  "schema": 1,
+  "audio": {
+    "bgm00.adx": {
+      "source": "audio/bgm00.flac",
+      "origin": "MARL.zip/TOWN/town_bgm00.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 7579604,
+      "loop_samples": [
+        4692774,
+        7579603
+      ],
+      "source_flac_sha256": "4b872f6cddb36028dcd32fa847da111c2eec665caec5076b5106dac650688a3a"
+    },
+    "bgm01.adx": {
+      "source": "audio/bgm01.flac",
+      "origin": "MARL.zip/TOWN/town_bgm01.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 4335606,
+      "loop_samples": [
+        1250655,
+        4335605
+      ],
+      "source_flac_sha256": "2e0c60c8744668770499ea2aa6bdb67ebe5633c1e7be2a0a85e2ea26e33ce94b"
+    },
+    "bgm02.adx": {
+      "source": "audio/bgm02.flac",
+      "origin": "MARL.zip/TOWN/town_bgm02.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 2614594,
+      "loop_samples": [
+        376200,
+        2614593
+      ],
+      "source_flac_sha256": "c5eb140845ce21debd9ddaab0976e8da9580d829c6d9f7e3dede774099fd4e30"
+    },
+    "bgm04.adx": {
+      "source": "audio/bgm04.flac",
+      "origin": "MARL.zip/TOWN/town_bgm04.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 7272462,
+      "loop_samples": [
+        4733636,
+        7272461
+      ],
+      "source_flac_sha256": "8b11c0a3ad743bb6404209b51a5f06cb869d27e2a9d74f9bbec7ad78e2d4071e"
+    },
+    "bgm06.adx": {
+      "source": "audio/bgm06.flac",
+      "origin": "MARL.zip/TOWN/town_bgm06.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 4602076,
+      "loop_samples": [
+        2023135,
+        4602075
+      ],
+      "source_flac_sha256": "91a4419a63697867ff33e39c1c7eb88d3415111454f1730695b9149c479978df"
+    },
+    "bgm07.adx": {
+      "source": "audio/bgm07.flac",
+      "origin": "MARL.zip/TOWN/town_bgm07.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 3998700,
+      "loop_samples": [
+        850372,
+        3998699
+      ],
+      "source_flac_sha256": "6f785dd8a679f0dfe5afba3f7ca41a8ab6d071f657d430b08f27af8ba9500c19"
+    },
+    "bgm08.adx": {
+      "source": "audio/bgm08.flac",
+      "origin": "MARL.zip/TOWN/town_bgm08.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 4824884,
+      "loop_samples": [
+        17804,
+        4824883
+      ],
+      "source_flac_sha256": "e96bb298d045eed6ad8c7297eb237461f53fa7e03cd5c3cf4425b6bbaf4df3d6"
+    },
+    "bgm09.adx": {
+      "source": "audio/bgm09.flac",
+      "origin": "MARL.zip/TOWN/town_bgm09.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 3545744,
+      "loop_samples": [
+        926168,
+        3545743
+      ],
+      "source_flac_sha256": "ddaf19b421346c57c9676248831a1d23eb59b32d0d68a5a7ac752e7d42d195b4"
+    },
+    "bgm10.adx": {
+      "source": "audio/bgm10.flac",
+      "origin": "MARL.zip/TOWN/town_bgm10.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 5886357,
+      "loop_samples": [
+        1355698,
+        5886356
+      ],
+      "source_flac_sha256": "d8f18579656dabdd7e48e5aae36129d9b19ca01c6fac43bbf70eeb43d60a3410"
+    },
+    "bgm11.adx": {
+      "source": "audio/bgm11.flac",
+      "origin": "MARL.zip/TOWN/town_bgm11.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 4834588,
+      "loop_samples": [
+        973868,
+        4834587
+      ],
+      "source_flac_sha256": "310b602b735b51a5e8d747f7e8bbd94e3d517784d272c2028b5eaacf67f5ca64"
+    },
+    "bgm15.adx": {
+      "source": "audio/bgm15.flac",
+      "origin": "MARL.zip/TOWN/town_bgm15.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 7733866,
+      "loop_samples": [
+        3793327,
+        7733865
+      ],
+      "source_flac_sha256": "679ea8689b217298eabac09fcb77d851505c14ed5e5b919334ac4b22173eeefe"
+    },
+    "bgm16.adx": {
+      "source": "audio/bgm16.flac",
+      "origin": "MARL.zip/TOWN/town_bgm16.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 5635344,
+      "loop_samples": [
+        1870122,
+        5635343
+      ],
+      "source_flac_sha256": "48497ef42642e32162cd89f77664a37fc6fb2d76d1a67f5c246bbfd898675e4b"
+    },
+    "bgm18.adx": {
+      "source": "audio/bgm18.flac",
+      "origin": "MARL.zip/TOWN/town_bgm18.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 6446525,
+      "loop_samples": [
+        2042234,
+        6446524
+      ],
+      "source_flac_sha256": "a4b8e0e83b87bb380220f0f1c15e841b60215afde830110ea38a9ecb29eff110"
+    },
+    "bgm22.adx": {
+      "source": "audio/bgm22.flac",
+      "origin": "MARL.zip/TOWN/town_bgm22.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 5637857,
+      "loop_samples": [
+        883912,
+        5637856
+      ],
+      "source_flac_sha256": "709bf11a127f597ba293e986bfcde7cd0208c2c49123282ce14d73e8ab10ac0b"
+    },
+    "bgm23.adx": {
+      "source": "audio/bgm23.flac",
+      "origin": "MARL.zip/TOWN/town_bgm23.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 4026489,
+      "loop_samples": [
+        77114,
+        4026488
+      ],
+      "source_flac_sha256": "36ed2a8cf330de05676b8b20939023bfa3ab9281ab04113b9e169c89a49eb4f6"
+    },
+    "bgm29.adx": {
+      "source": "audio/bgm29.flac",
+      "origin": "MARL.zip/TOWN/town_bgm29.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 3942713,
+      "loop_samples": [
+        875910,
+        3942712
+      ],
+      "source_flac_sha256": "efa9b1568e694b0cc24a034a76e5880e2f6ee133a6cf7a60d3e5b7c2fe7c08d5"
+    },
+    "bgm33.adx": {
+      "source": "audio/bgm33.flac",
+      "origin": "MARL.zip/TOWN/town_bgm33.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 4717866,
+      "loop_samples": [
+        1366795,
+        4717865
+      ],
+      "source_flac_sha256": "6bf47947428867c715726f553f597828ea1b0a086e45a69168df2640cca455a4"
+    },
+    "bgm03.adx": {
+      "source": "audio/bgm03.flac",
+      "origin": "BATTLE.7z/battle_bgm03.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 3940070,
+      "loop_samples": [
+        1578071,
+        3940069
+      ],
+      "source_flac_sha256": "4e7979f473ffdfaac63d74d4372f278eac3c5b507c49b0832c82b3b013578997"
+    },
+    "bgm05.adx": {
+      "source": "audio/bgm05.flac",
+      "origin": "BATTLE.7z/battle_bgm05.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 5636615,
+      "loop_samples": [
+        2346374,
+        5636614
+      ],
+      "source_flac_sha256": "a378f63dbc38d407f37ef2640837d63115cd62b23eeed76fb6020a926eb92f37"
+    },
+    "bgm12.adx": {
+      "source": "audio/bgm12.flac",
+      "origin": "BATTLE.7z/battle_bgm12.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 5053486,
+      "loop_samples": [
+        1142667,
+        5053485
+      ],
+      "source_flac_sha256": "78b91387c72d525bc050dc60f6cf07c8b2ac8c0725037e3bcc0cd0e93a9ccaeb"
+    },
+    "bgm25.adx": {
+      "source": "audio/bgm25.flac",
+      "origin": "BATTLE.7z/battle_bgm25.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 9988662,
+      "loop_samples": [
+        4572987,
+        9988661
+      ],
+      "source_flac_sha256": "6191d78754c04e08ad1fdbd4545ecbd2310db61121a9693fe7a9922be325111d"
+    },
+    "bgm30.adx": {
+      "source": "audio/bgm30.flac",
+      "origin": "BATTLE.7z/battle_bgm30.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 8483713,
+      "loop_samples": [
+        4220668,
+        8483712
+      ],
+      "source_flac_sha256": "5bba77cf22b393ea99b97c42ddb271816536af3c8d3685fdfd85deb9c0ca3b57"
+    },
+    "bgm38.adx": {
+      "source": "audio/bgm38.flac",
+      "origin": "BATTLE.7z/battle_bgm38.wav",
+      "category": "BGM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 2416605,
+      "loop_samples": [
+        1040280,
+        2416604
+      ],
+      "source_flac_sha256": "6d23bd03125fa99c2e9ba800f24495d2ec7ece64b358571490f68b4bad4d7e49"
+    },
+    "SND/song00.adx": {
+      "source": "audio/song00.flac",
+      "origin": "MARL.7z/BGMJ/Song00.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 7049952,
+      "source_flac_sha256": "0d47c4dabc49499d4a5cb66bc9ba7b469c7d355bd694f912e6a25553e9279ce0"
+    },
+    "SND/song01.adx": {
+      "source": "audio/song01.flac",
+      "origin": "MARL.7z/BGMJ/Song01.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 5763744,
+      "source_flac_sha256": "1d4b67759a3959f25b457584d1a83a4463f8993ad4622dbc364d8a64a3551b62"
+    },
+    "SND/song02.adx": {
+      "source": "audio/song02.flac",
+      "origin": "MARL.7z/BGMJ/Song02.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 10642464,
+      "source_flac_sha256": "d0bddfe6c63c2e91f81779f9b229618f038edf4b98ecce358f3b707ee8b4e7b6"
+    },
+    "SND/song03.adx": {
+      "source": "audio/song03.flac",
+      "origin": "MARL.7z/BGMJ/Song03.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 6648768,
+      "source_flac_sha256": "7cee6a1ccbee95eddcef639b59b8bac284926dabc23b721f062266202a6fc866"
+    },
+    "SND/song04.adx": {
+      "source": "audio/song04.flac",
+      "origin": "MARL.7z/BGMJ/Song04.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 5927040,
+      "source_flac_sha256": "f37e9e319e9ca09b6e047d61ce93294597dfeb910691bc65f2052b603743b2eb"
+    },
+    "SND/song05.adx": {
+      "source": "audio/song05.flac",
+      "origin": "MARL.7z/BGMJ/Song05.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 5775840,
+      "source_flac_sha256": "179879f8559bf2d950b2aefa9761cf4f0ad3f638a07469e8385115e5096926d4"
+    },
+    "SND/song06.adx": {
+      "source": "audio/song06.flac",
+      "origin": "MARL.7z/BGMJ/Song06.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 13884192,
+      "source_flac_sha256": "0d09aca3d3cc6fe87b8a2f60e6efa545e8f10e0482eaae45d30336765be10a29"
+    },
+    "SND/song08.adx": {
+      "source": "audio/song08.flac",
+      "origin": "MARL.7z/BGMJ/Song08.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 9102240,
+      "source_flac_sha256": "870ba85570055bab24c953e9a4dec8ebc1c2b7666f5087a04d0d4d42d993ee64"
+    },
+    "SND/song09.adx": {
+      "source": "audio/song09.flac",
+      "origin": "MARL.7z/BGMJ/Song09.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 7308000,
+      "loop_start_seconds_from_original_NDS": 21.414161167,
+      "source_flac_sha256": "dc8d8122b4a42127f2b6de4516cc8e44216c1429321baaf29e86511c8f932000"
+    },
+    "SND/song10.adx": {
+      "source": "audio/song10.flac",
+      "origin": "MARL.7z/BGMJ/Song10.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 6066144,
+      "source_flac_sha256": "cfb606c0c6bfa99cd636310093378dcfd8bad7548c71154238b45f85678f5198"
+    },
+    "SND/song12.adx": {
+      "source": "audio/song12.flac",
+      "origin": "MARL.7z/BGMJ/jin_00s.wav",
+      "category": "SONG",
+      "sample_rate": 37800,
+      "channels": 2,
+      "samples": 445536,
+      "source_flac_sha256": "4487e58a80981608c342c3b54a001e86b58a09a5e908eefa377dcc1e3447062f"
+    },
+    "SND/song24.adx": {
+      "source": "audio/song24.flac",
+      "origin": "Tenshi3 PS2 SONG_02.flac (lossless original upload)",
+      "category": "SONG",
+      "source_flac_sha256": "333b506fcd884b477ea1d942179d62a5a9961d7a02932a177e2111f8a824aa55",
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples": 5895680
+    },
+    "SND/song25.adx": {
+      "source": "audio/song25.flac",
+      "origin": "Tenshi3 PS2 SONG_10.flac (lossless original upload)",
+      "category": "SONG",
+      "source_flac_sha256": "f9d6d0ce7b7d33c29210db2c3dbbb8510626e2a75420ee3f659f02ba4d93e270",
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples": 5451264
+    },
+    "SND/song26.adx": {
+      "source": "audio/song26.flac",
+      "origin": "Tenshi3 PS2 SONG_15.flac (lossless original upload)",
+      "category": "SONG",
+      "source_flac_sha256": "b95f388106488e60ea869a225079e44ee4eda87c1e93b4888ce9ce618cefdc7e",
+      "sample_rate": 48000,
+      "channels": 2,
+      "samples": 17450496
+    },
+    "WAVE_SE_02": {
+      "source": "audio/WAVE_SE_02_jingle01.flac",
+      "origin": "MARL.zip/JINGLE/jingle01.wav",
+      "category": "SWAR-ADPCM",
+      "confirmed_by_user": true,
+      "sample_rate": 44100,
+      "channels": 2,
+      "samples": 189952,
+      "source_flac_sha256": "074ccc902e1b7981545529f2072ba3ccd2ecdb1c6e367d7de6f8920f764b90aa"
+    }
+  },
+  "notes": "PC 16-bit PCM WAV transcoded losslessly to FLAC; BGM source smpl loops retained in loop_samples. Original user PS2 FLACs byte-identical. Preserve all lengths."
+}
