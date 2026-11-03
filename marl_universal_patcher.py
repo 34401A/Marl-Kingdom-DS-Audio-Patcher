@@ -108,14 +108,14 @@ def choose_shift_mode(option,has_presets=True):
   return option=='preset'
  if option!='ask':
   raise ValueError('Invalid shift mode: '+str(option))
- print('Shift: [0] off  [1] preset')
+ print('Shift: [0] preset (default)  [1] off')
  if not sys.stdin.isatty():
-  return False
+  return True
  while True:
   try:answer=input('Shift [0]: ').strip()
-  except EOFError:return False
-  if answer in ('','0'):return False
-  if answer=='1':return True
+  except EOFError:return True
+  if answer in ('','0'):return True
+  if answer=='1':return False
   print('Enter 0 or 1.')
 
 def resolve_shifts(manifest,config_file,no_shift,overrides):
@@ -163,16 +163,16 @@ def effective_rate(source_rate,limit):
 def choose_resample_target(option,selected):
  """Return an optional sample-rate cap. Existing lower rates are preserved."""
  if option=='keep':return None
- if option in ('37800','32768'):return int(option)
+ if option in ('32728','32768','37800'):return int(option)
  if option!='ask':raise ValueError('Invalid resampling mode: '+str(option))
- print('Sample rate: [0] source  [1] 37800  [2] 32768')
+ print('Sample rate: [0] 32728 Hz (default)  [1] no resampling  [2] 32768 Hz')
  if not sys.stdin.isatty():
-  return None
+  return 32728
  while True:
   try:answer=input('Rate [0]: ').strip()
-  except EOFError:return None
-  if answer in ('','0'):return None
-  if answer=='1':return 37800
+  except EOFError:return 32728
+  if answer in ('','0'):return 32728
+  if answer=='1':return None
   if answer=='2':return 32768
   print('Enter 0, 1, or 2.')
 
@@ -334,15 +334,15 @@ def main(argv=None):
  ap.add_argument('-o','--output',help='Custom output ROM path')
  ap.add_argument('--no-swar',action='store_true',help='Replace the 37 ADX tracks only; leave WAVE_SE_02 untouched')
  ap.add_argument('--shift-config',type=Path,default=SHIFT_CONFIG,help='Shift preset JSON file (negative trims the start; positive adds silence)')
- ap.add_argument('--shift-mode',choices=['ask','off','preset'],default='ask',help='Shift preset: ask at launch (default), off, or preset')
+ ap.add_argument('--shift-mode',choices=['ask','off','preset'],default='preset',help='Shift preset: preset (default), off, or ask')
  ap.add_argument('--no-shift',action='store_true',help='Disable preset shifts (explicit --shift overrides still apply)')
  ap.add_argument('--shift',action='append',default=[],metavar='TRACK=SECONDS',help='Override a track offset in seconds; may be repeated')
- ap.add_argument('--resample',choices=['ask','keep','37800','32768'],default='ask',help='Pre-encode sample rate: ask at launch (default), keep, 37800, or 32768')
+ ap.add_argument('--resample',choices=['ask','32728','keep','32768','37800'],default='ask',help='Pre-encode sample-rate cap: ask (default 32728), 32728, keep, or 32768; legacy 37800 is also accepted')
  ap.add_argument('--wave-rate',type=int,default=44100,help='WAVE_SE_02 output sample rate (default 44100; in-game behavior unverified)')
  ap.add_argument('--allow-partial',action='store_true',help='Allow missing ADX tracks to be skipped')
  ap.add_argument('--yes',action='store_true',help='Allow a modified or unrecognized ROM without an interactive confirmation')
  ap.add_argument('--dry-run',action='store_true',help='Validate inputs without patching')
- ap.add_argument('--report',action='store_true',help='Write a detailed JSON report')
+ ap.add_argument('--report',action='store_true',help='Compatibility option; a detailed JSON report is always written')
  a=ap.parse_args(argv)
  if not a.rom:
   ap.print_help();return 2
@@ -437,10 +437,10 @@ def main(argv=None):
     out.seek(v['start']);payload=out.read(v['end']-v['start'])
     if key.endswith('.adx'):check_adx(payload,expect_loop=x['loop'])
     else:assert payload[:4]==b'SDAT' and u32(payload,8)==len(payload)
-  if a.report:
-   final_log=output.with_suffix('.audio_report.json')
-   final_log.write_text(json.dumps({'input':str(rom),'input_sha256':digest,'detected':name,'official':official,'output':str(output),'size_bytes':output.stat().st_size,'elapsed_seconds':round(time.monotonic()-t0,1),'replacements':log,'resample_mode':rate_limit if rate_limit is not None else 'keep','resampled_tracks':len(converted),'shift_preset_enabled':use_presets,'shift_configuration':{k:str(v) for k,v in shifts.items() if v},'notes':'Audio rebuilt from lossless FLAC with optional pre-encode resampling and time shifts; original ROM untouched. SWAR playback requires in-game check.'},ensure_ascii=False,indent=2),encoding='utf8')
+  final_log=output.with_suffix('.audio_report.json')
+  final_log.write_text(json.dumps({'input':str(rom),'input_sha256':digest,'detected':name,'official':official,'output':str(output),'size_bytes':output.stat().st_size,'elapsed_seconds':round(time.monotonic()-t0,1),'replacements':log,'resample_mode':rate_limit if rate_limit is not None else 'keep','resampled_tracks':len(converted),'shift_preset_enabled':use_presets,'shift_configuration':{k:str(v) for k,v in shifts.items() if v},'notes':'Audio rebuilt from lossless FLAC with optional pre-encode resampling and time shifts; original ROM untouched. SWAR playback requires in-game check.'},ensure_ascii=False,indent=2),encoding='utf8')
   print('Saved:',output)
+  print('Report:',final_log)
   return 0
  except BaseException:
   if output.exists():
